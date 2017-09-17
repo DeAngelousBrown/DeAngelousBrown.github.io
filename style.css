@@ -19,7 +19,7 @@ Styling for the page header
 
 .header {
 	background: #184a4a;
-	color: #fff;
+	color: #ff6600;
 	padding: 20px 5%;
 	box-shadow: 0 1px 3px #555;
 	margin: auto;
@@ -51,7 +51,7 @@ Styling for the navigation in the header
 .header-nav ul li a {
 	font-size: 1.2em;
 	text-decoration: none;
-	color: #fff;
+	color: #b3b3ff;
 }
 /*--------------------------------
 Styling for the main body of the page
@@ -76,7 +76,7 @@ Styling for the footer of th page
 .footer {
 	padding: 10px 5%;
 	background: #184a4a;
-	color: #fff;
+	color: #b3b3ff;
 }
 
 .footer p {
@@ -92,7 +92,7 @@ a {
   -webkit-user-select: none;
   background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
   border: 1px solid #aaa;
-  color: #444;
+  color: #ffff66;
   font-size: inherit;
   margin-bottom: 0px;
   min-width: 4em;
