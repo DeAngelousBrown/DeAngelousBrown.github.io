@@ -53,7 +53,7 @@
 		  -webkit-user-select: none;
 		  background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
 		  border: 1px solid #aaa;
-		  color: #0000e6;
+		  color: #000099;
 		  font-size: inherit;
 		  margin-bottom: 0px;
 		  min-width: 4em;
@@ -70,7 +70,7 @@
 		#search_button:active {
 		  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
 		  background: #ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);
-		  color: #333;
+		  color: #000000;
 		}
 	</style>
 </head>
@@ -108,7 +108,7 @@ $(function(){
             			'<img src="' + image + '" id="pic">' 
             			+ '<div id="info">' 
             			+ '<h1>' + this.volumeInfo.title + '</h1>' 
-            		        + this.id + '">Details</a></h2>' 
+            		        + '<h2><a href="https://deangelousbrown.github.io/milestone2Part1.html/milestone2details.html?id='+ this.id + '">Details</a></h2>' 
             			+ '</div>').appendTo("#wrapper");
 
             	});
