@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Milestone 2 - Google Bookshelf</title>
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6738A049-B0E8-5243-81FE-047CFA352F65/main.js" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        #header {
+            background: #184a4a;
+            color: #fff;
+            padding: 1px 5%;
+            box-shadow: 0 1px 3px #555;
+            margin: auto;
+            text-align: center;
+}
+        #book{
+            width: 80%;
+            padding: 1em;
+            margin-bottom: 3em;
+            margin: 0 auto;
+            height: 100%;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+        #info{
+            float: right;
+            width: 60%;
+            padding: 1em;
+
+        }
+        #pic{
+            float: left;
+            width: 20%;
+            clear: both;
+            padding: 1em;
+        }
+    </style>
+</head>
+<script>
+    $(function () {
+
+        var url = "https://www.googleapis.com/books/v1/users/117186123889639983979/bookshelves/1001/volumes";
+        $.getJSON(url, function(json){
+
+            $.each(json.items, function(){
+
+                try {
+                    var image=this.volumeInfo.imageLinks.smallThumbnail;
+                }
+                catch(err) {
+                    console.log(err);                    }
+
+                $('<div class="clearfix" id="book"></div>').append(
+                    '<img src="' + image + '" id="pic">' 
+                    + '<div id="info">' 
+                    + '<h1>' + this.volumeInfo.title + '</h1>' 
+                    + '<h2><a href="http://jeremiahclarke.me/milestone2details.html?id=' + this.id + '">Details</a></h2>' 
+                    + '</div>').appendTo("#wrapper");
+
+            });
+
+        }); 
+    });
+</script>
+<body>
+
+    <div id="header"><h3>Milestone 2 - Google Bookshelf</h3></div>
+    <div id="wrapper"></div>
+
+</body>
+</html>
