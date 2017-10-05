@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Milestone 2 - Book Search</title>
+	<title>Milestone 2 Part 1</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6738A049-B0E8-5243-81FE-047CFA352F65/main.js" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -75,7 +75,7 @@
 	</style>
 </head>
 <body>
-	<div id="header"><h3>Milestone 2 - Book Search</h3></div>
+	<div id="header"><h3>Milestone 2 Part 1</h3></div>
 	<div id="search">
 		<input id="search_val" type="text" name="search" placeholder="Search...">
 		<button id="search_button" type="button">Search</button>
@@ -107,7 +107,7 @@ $(function(){
             			'<img src="' + image + '" id="pic">' 
             			+ '<div id="info">' 
             			+ '<h1>' + this.volumeInfo.title + '</h1>' 
-            			+ '<h2><a href="http://jeremiahclarke.me/milestone2details.html?id=' + this.id + '">Details</a></h2>' 
+            		        + this.id + '">Details</a></h2>' 
             			+ '</div>').appendTo("#wrapper");
 
             	});
