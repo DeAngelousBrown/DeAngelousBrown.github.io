@@ -237,12 +237,13 @@ $(function(){
 
     <style type="text/css">
         #header {
-            background: #cd201f;
-            color: #fff;
+            background: #184a4a;
+            color: #0000e6;
             padding: 1px 5%;
             box-shadow: 0 1px 3px #555;
             margin: auto;
             text-align: center;
+	background-color: orange;
         }
         
         #search {
@@ -263,13 +264,14 @@ $(function(){
         }
         
         #movielist {
-            width: 80%;
-            padding: 1em;
-            margin-bottom: 3em;
+            width: 90%;
+            padding: 3em;
+            margin-bottom: 5em;
             margin: 0 auto;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
+		border-bottom-style: dotted;
         }
         
         .button {
@@ -281,10 +283,10 @@ $(function(){
             color: #444;
             font-size: inherit;
             margin-bottom: 0px;
-            min-width: 4em;
+            min-width: 5em;
             padding: 3px 12px 3px 12px;
             font-family: sans-serif;
-            text-decoration: none;
+            text-decoration: bold;
         }
         
         .button:hover {
@@ -302,7 +304,7 @@ $(function(){
         
         .movielistitem {
             width: 100%;
-            border: thin solid gray;
+            border: thin solid red;
             margin: .5em;
             flex-direction: column;
             box-shadow: 0 1px 5px #555;
@@ -316,7 +318,7 @@ $(function(){
         }
         
         .movielistitemheader:hover {
-            background-color: #e6e6e6;
+            background-color: #c0ee13;
         }
         
         .moviedetails {
@@ -324,7 +326,7 @@ $(function(){
         }
         
         .card {
-            width: 75%;
+            width: 80%;
             display: none;
         }
         
@@ -351,22 +353,24 @@ $(function(){
         
         #moviedetails {
             position: fixed;
-            top: 50px;
-            left: 120px;
+            top: 40px;
+            left: 130px;
             overflow: auto;
-            width: 80%;
+            width: 900%;
             height: 80%;
             background-color: #FFF;
             padding: 10px;
             display: none;
             outline: 500px solid rgba(0, 0, 0, 0.5);
             box-shadow: 0 1px 9px #555;
+	border-bottom-style: dotted red;
             border: thin solid gray;
+		
         }
         
         #img {
-            height: 20%;
-            width: 20%;
+            height: 350%;
+            width: 35%;
         }
         
         #overview {
@@ -393,7 +397,7 @@ $(function(){
 
 <body>
     <div id="header">
-        <h1 style="text-shadow: 0 1px 5px #555;">Term Project</h1>
+        <h1 style="text-shadow: 0 1px 5px #555;">Denzel Maxey and DeAngelous Brown Term Project</h1>
     </div>
     <div id="navigation">
         <div class="line" id="pages">
@@ -419,8 +423,8 @@ $(function(){
             </ul>
         </div>
         <div id="search">
-            <input id="search_val" type="text" name="search" placeholder="Search...">
-            <button class="button" id="search_button" type="button">Search</button>
+            <input id="search_val" type="text" name="search" placeholder="Search.....">
+            <button class="button" id="search_button" type="button">Search Here</button>
         </div>
     </div>
     <div id="maincontent">
